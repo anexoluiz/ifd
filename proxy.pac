@@ -17,7 +17,10 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)zopim\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)force\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)akamai-access\.com$/.test(host)) return "+proxy";
+        if (/^fleet\.ifoodxt\.com\.br$/.test(host)) return "+proxy";
         if (/(?:^|\.)ifoodxt\.com\.br$/.test(host)) return "+proxy";
+        if (/(?:^|\.)myplaylist\.io$/.test(host)) return "+proxy";
+        if (/(?:^|\.)zendesk\.com$/.test(host)) return "+proxy";
         return "DIRECT";
     },
     "+proxy": function(url, host, scheme) {
@@ -26,4 +29,3 @@ var FindProxyForURL = function(init, profiles) {
         return "PROXY 10.172.128.41:80";
     }
 });
-
