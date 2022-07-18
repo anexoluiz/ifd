@@ -14,7 +14,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/^fleet\.ifoodxt\.com\.br$/.test(host)) return "+proxy";
         if (/(?:^|\.)ifood\.com\.br$/.test(host)) return "DIRECT";
         if (/(?:^|\.)salesforce\.com$/.test(host)) return "+proxy";
-        if (/(?:^|\.)zopim\.com$/.test(host)) return "+proxy";
+        if (/(?:^|\.)zopim\.com$/.test(host)) return "+proxy2";
         if (/(?:^|\.)force\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)akamai-access\.com$/.test(host)) return "+proxy";
         if (/^fleet\.ifoodxt\.com\.br$/.test(host)) return "+proxy";
