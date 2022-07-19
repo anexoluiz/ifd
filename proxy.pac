@@ -12,7 +12,7 @@ var FindProxyForURL = function(init, profiles) {
     "+auto switch": function(url, host, scheme) {
         "use strict";
         if (/^fleet\.ifoodxt\.com\.br$/.test(host)) return "+proxy";
-        if (/(?:^|\.)ifood\.com\.br$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)ifood\.com\.br$/.test(host)) return "+proxy2";
         if (/(?:^|\.)salesforce\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)zopim\.com$/.test(host)) return "+proxy2";
         if (/(?:^|\.)force\.com$/.test(host)) return "+proxy";
