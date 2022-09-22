@@ -12,15 +12,15 @@ var FindProxyForURL = function(init, profiles) {
     "+auto switch": function(url, host, scheme) {
         "use strict";
         if (/^fleet\.ifoodxt\.com\.br$/.test(host)) return "+proxy";
-        if (/(?:^|\.)ifood\.com\.br$/.test(host)) return "+proxy2";
+        if (/(?:^|\.)ifood\.com\.br$/.test(host)) return "+proxy";
         if (/(?:^|\.)salesforce\.com$/.test(host)) return "+proxy";
-        if (/(?:^|\.)zopim\.com$/.test(host)) return "+proxy2";
+        if (/(?:^|\.)zopim\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)force\.com$/.test(host)) return "+proxy";
         if (/(?:^|\.)akamai-access\.com$/.test(host)) return "+proxy";
         if (/^fleet\.ifoodxt\.com\.br$/.test(host)) return "+proxy";
         if (/(?:^|\.)ifoodxt\.com\.br$/.test(host)) return "+proxy";
         if (/(?:^|\.)myplaylist\.io$/.test(host)) return "+proxy";
-        if (/(?:^|\.)zendesk\.com$/.test(host)) return "+proxy2";
+        if (/(?:^|\.)zendesk\.com$/.test(host)) return "+proxy";
         return "DIRECT";
     },
     "+proxy": function(url, host, scheme) {
@@ -31,6 +31,6 @@ var FindProxyForURL = function(init, profiles) {
     "+proxy2": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
-        return "PROXY 10.171.10.20:4444";
+        return "PROXY 10.171.10.20:4444; PROXY 10.171.10.120:4444";
     }
 });
