@@ -21,6 +21,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/zendesk\.com$/.test(host)) return "+main";
         if (/zopim\.io$/.test(host)) return "+main";
         if (/zopim\.com$/.test(host)) return "+main";
+        if (/csu\.beedoo\.io$/.test(host)) return "+main";
         if (/openstreetmap\.org$/.test(host)) return "DIRECT";
         return "DIRECT";
     },
