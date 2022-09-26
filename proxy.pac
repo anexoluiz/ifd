@@ -22,7 +22,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/zopim\.io$/.test(host)) return "+main";
         if (/zopim\.com$/.test(host)) return "+main";
         if (/csu\.beedoo\.io$/.test(host)) return "+main";
-        if (/workspaceapp\.csu\.com\.br$/.test(host)) return "+main";
+        if (/workspaceapp\.csu\.com\.br$/.test(host)) return "DIRECT";
         if (/openstreetmap\.org$/.test(host)) return "DIRECT";
         return "DIRECT";
     },
