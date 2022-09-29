@@ -24,6 +24,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/csu\.beedoo\.io$/.test(host)) return "+main";
         if (/workspaceapp\.csu\.com\.br$/.test(host)) return "DIRECT";
         if (/openstreetmap\.org$/.test(host)) return "DIRECT";
+        if (/(?:^|\.)10\.171\.2\.176$/.test(host)) return "+main";
         return "DIRECT";
     },
     "+main": function(url, host, scheme) {
