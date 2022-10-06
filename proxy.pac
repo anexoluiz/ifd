@@ -25,6 +25,9 @@ var FindProxyForURL = function(init, profiles) {
         if (/zendesk\.com$/.test(host)) return "+main";
         if (/zopim\.io$/.test(host)) return "+main";
         if (/zopim\.com$/.test(host)) return "+main";
+                if (/force\.com$/.test(host)) return "+main";
+        if (/salesforce\.com$/.test(host)) return "+main";
+
 if (/zdassets\.com$/.test(host)) return "+main";
         if (/csu\.beedoo\.io$/.test(host)) return "+main";
         if (/workspaceapp\.csu\.com\.br$/.test(host)) return "DIRECT";
