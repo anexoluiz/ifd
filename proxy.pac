@@ -27,6 +27,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/openstreetmap\.org$/.test(host)) return "DIRECT";
         if (/(?:^|\.)10\.171\.2\.176$/.test(host)) return "+main";
         if (/force\.com$/.test(host)) return "+main";
+        if (/(?:^|\.)onetrust\.com$/.test(host)) return "+main";
         if (/salesforce\.com$/.test(host)) return "+main";
         if (/sfdcstatic\.com$/.test(host)) return "+main";
 
