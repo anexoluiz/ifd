@@ -11,6 +11,7 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto switch", {
     "+auto switch": function(url, host, scheme) {
         "use strict";
+        if (/ifood\.com\.br$/.test(host)) return "DIRECT";
         if (/ifconfig\.me$/.test(host)) return "+main";
         if (/(?:^|\.)ifoodxt\.com\.br$/.test(host)) return "+main";
         if (/backoffice\.ifood\.com\.br$/.test(host)) return "+main";
