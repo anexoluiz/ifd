@@ -13,6 +13,8 @@ var FindProxyForURL = function(init, profiles) {
         "use strict";
         if (/ifood\.com\.br$/.test(host)) return "DIRECT";
         if (/fstr\.rocks$/.test(host)) return "DIRECT";
+        if (/nr\-data\.net$/.test(host)) return "DIRECT";
+        if (/online\-metrix\.net$/.test(host)) return "DIRECT";
         if (/ifconfig\.me$/.test(host)) return "+main";
         if (/(?:^|\.)ifoodxt\.com\.br$/.test(host)) return "+main";
         if (/backoffice\.ifood\.com\.br$/.test(host)) return "+main";
