@@ -11,10 +11,10 @@ var FindProxyForURL = function(init, profiles) {
 }("+auto switch", {
     "+auto switch": function(url, host, scheme) {
         "use strict";
-        if (/ifood\.com\.br$/.test(host)) return "DIRECT";
-        if (/fstr\.rocks$/.test(host)) return "DIRECT";
-        if (/nr\-data\.net$/.test(host)) return "DIRECT";
-        if (/online\-metrix\.net$/.test(host)) return "DIRECT";
+        if (/ifood\.com\.br$/.test(host)) return "+main";
+        if (/fstr\.rocks$/.test(host)) return "+main";
+        if (/nr\-data\.net$/.test(host)) return "+main";
+        if (/online\-metrix\.net$/.test(host)) return "+main";
         if (/ifconfig\.me$/.test(host)) return "+main";
         if (/(?:^|\.)ifoodxt\.com\.br$/.test(host)) return "+main";
         if (/backoffice\.ifood\.com\.br$/.test(host)) return "+main";
