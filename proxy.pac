@@ -16,6 +16,7 @@ var FindProxyForURL = (function (init, profiles) {
     if (/(?:^|.)zdusercontent\.com$/.test(host)) return '+Proxy';
     if (/(?:^|.)zdassets\.com$/.test(host)) return '+Proxy';
     if (/(?:^|.)myplaylist\.io$/.test(host)) return '+Proxy';
+    if (/(?:^|.)zopim\.com$/.test(host)) return '+Proxy';
     if (/(?:^|.)ifoodxt\.com\.br$/.test(host)) return '+Proxy';
     if (/(?:^|.)force\.com$/.test(host)) return '+Proxy';
     //if (/(?:^|.)pendo\.io$/.test(host)) return '+Proxy';
@@ -23,7 +24,6 @@ var FindProxyForURL = (function (init, profiles) {
     //if (/(?:^|.)sentry\.io$/.test(host)) return '+Proxy';
     //if (/(?:^|.)smooch\.io$/.test(host)) return '+Proxy';
     //if (/(?:^|.)segment\.com$/.test(host)) return '+Proxy';
-
     return 'DIRECT';
   },
   '+Proxy': function (url, host, scheme) {
