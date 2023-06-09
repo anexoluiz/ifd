@@ -12,11 +12,11 @@ var FindProxyForURL = (function (init, profiles) {
 })('+Auto', {
   '+Auto': function (url, host, scheme) {
     'use strict';
-    if (/(?:^|.)zendesk\.com$/.test(host)) return '+Proxy';
-    if (/(?:^|.)zdusercontent\.com$/.test(host)) return '+Proxy';
-    if (/(?:^|.)zdassets\.com$/.test(host)) return '+Proxy';
-    if (/(?:^|.)myplaylist\.io$/.test(host)) return '+Proxy';
-    if (/(?:^|.)zopim\.com$/.test(host)) return '+Proxy';
+    //if (/(?:^|.)zendesk\.com$/.test(host)) return '+Proxy';
+    //if (/(?:^|.)zdusercontent\.com$/.test(host)) return '+Proxy';
+    //if (/(?:^|.)zdassets\.com$/.test(host)) return '+Proxy';
+    //if (/(?:^|.)myplaylist\.io$/.test(host)) return '+Proxy';
+    //if (/(?:^|.)zopim\.com$/.test(host)) return '+Proxy';
     if (/(?:^|.)ifoodxt\.com\.br$/.test(host)) return '+Proxy';
     if (/(?:^|.)force\.com$/.test(host)) return '+Proxy';
     //if (/(?:^|.)pendo\.io$/.test(host)) return '+Proxy';
